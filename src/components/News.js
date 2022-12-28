@@ -105,6 +105,9 @@ export class News extends Component {
                       : ""
                   }
                   imageUrl={newsElement.urlToImage}
+                  author={newsElement.author}
+                  publishedAt={newsElement.publishedAt}
+                  source={newsElement.source.name}
                 />
               );
             })}
