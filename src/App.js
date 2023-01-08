@@ -7,7 +7,7 @@ import { Component } from "react";
 
 export default class App extends Component {
   pageSize = 6;
-
+  apiKey = process.env.REACT_APP_NEWS_API;
   state = {
     progress: 0,
   };
@@ -26,6 +26,7 @@ export default class App extends Component {
             <News
               setProgress={this.setProgress}
               pageSize={this.pageSize}
+              apiKey={this.apiKey}
               key="business"
               country="in"
               category="business"
@@ -35,6 +36,7 @@ export default class App extends Component {
             <News
               setProgress={this.setProgress}
               pageSize={this.pageSize}
+              apiKey={this.apiKey}
               key="entertainment"
               country="in"
               category="entertainment"
@@ -44,6 +46,7 @@ export default class App extends Component {
             <News
               setProgress={this.setProgress}
               pageSize={this.pageSize}
+              apiKey={this.apiKey}
               key="general"
               country="in"
               category="general"
@@ -53,6 +56,7 @@ export default class App extends Component {
             <News
               setProgress={this.setProgress}
               pageSize={this.pageSize}
+              apiKey={this.apiKey}
               key="health"
               country="in"
               category="health"
@@ -62,6 +66,7 @@ export default class App extends Component {
             <News
               setProgress={this.setProgress}
               pageSize={this.pageSize}
+              apiKey={this.apiKey}
               key="science"
               country="in"
               category="science"
@@ -71,6 +76,7 @@ export default class App extends Component {
             <News
               setProgress={this.setProgress}
               pageSize={this.pageSize}
+              apiKey={this.apiKey}
               key="sports"
               country="in"
               category="sports"
@@ -80,6 +86,7 @@ export default class App extends Component {
             <News
               setProgress={this.setProgress}
               pageSize={this.pageSize}
+              apiKey={this.apiKey}
               key="technology"
               country="in"
               category="technology"
